@@ -1,0 +1,14 @@
+
+
+.banner{
+    background: url('../../assets/img/onshore-drilling.-exploration.-oil-rig.jpg') !important;
+    height: 80vh !important;
+    background-size: 100% 100% !important;
+      background-position: center;
+    width: auto !important;
+}
+/* what we do */
+.text-color{
+ background-color:  #2e3177;
+ 
+}

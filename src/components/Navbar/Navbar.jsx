@@ -1,0 +1,110 @@
+
+import { useState } from 'react';
+import Logo from '../../assets/Logo.png'
+import {FaFacebookF,FaTwitter, FaInstagram, FaLinkedin  } from 'react-icons/fa';
+import "./Navbar.css" 
+import { FiMenu ,  FiX} from 'react-icons/fi';
+import { motion,AnimatePresence } from 'framer-motion';
+
+export default function Navbar() {
+    const [isOpen, setOpen] = useState(false)
+    const toggleMenu =()=> setOpen(!isOpen);
+
+    
+  return (
+    <div>
+    <div className="nav-container h-22 md:h-42  flex bg-green-50 ">
+        <div className=" flex justify-between md:flex md:justify-evenly bg-white items-center shadow w-full mt-14 h-16  ">
+            {/* <div className='bg-gray-500  absolute'>
+                <hr/>
+            </div> */}
+          
+            <div className="nav-logo flex items-start md:ml-0 ">
+                <img src={Logo} alt="bja-logo" className='ml-6 w-24 h-24 md:w-36 md:h-36' />
+            </div>
+            <div className="nav-links md:flex gap-10 font-playfair font-medium text-xl hidden ">
+                <div className="links"><a href="#">THE COMPANY</a></div>
+                <div className="links"><a href="#">SOLUTION</a></div>
+                <div className="links"><a href="#">BLOG</a></div>
+                <div className="links"><a href="#">CAREER</a></div>
+                <div className="links"><a href="#">CONTACT</a></div>
+            </div>
+            <div className="nav-socialplatfom md:flex gap-5  justify-evenly hidden  ">
+                <div className="icon-f">
+                  <FaFacebookF className='w-6 h-6 bg-blue-900 text-lg  text-gray-200 rounded-full p-1' />
+                  </div>
+                <div className="icon-f w-5 h-5 bg-color-blue">
+                    <FaTwitter className='w-6 h-6  bg-blue-900  text-lg  text-gray-200 rounded-full p-1 '/>
+                    </div>
+                <div className="icon-f">
+                    <FaInstagram className='w-6 h-6 bg-blue-900  text-gray-200 rounded-full text-lg p-1'/>
+                    </div>
+                <div className="icon-f">
+                    <FaLinkedin className='w-6 h-6 bg-blue-900  text-gray-200 rounded-full text-lg p-1'/>
+                    </div>
+            </div>
+
+            {/* Mobile-view */}
+            <div className="mobile-view md:hidden flex ">
+                <button  onClick={toggleMenu}>< FiMenu className='w-32'/> </button>
+ <AnimatePresence> 
+               {isOpen &&(
+               
+                 <motion.div
+                 initial={{ x: '100%' }}
+                 animate={{ x: 0 }}
+                 exit={{ x: '100%' }}
+                 transition={{ duration: 0.2 }}
+               className = {` fixed inset-0 bg-green-50 h-full  flex flex-col items-center  text-white z-20  transform ${isOpen ? 'navbar-slide-in' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
+               
+                <div className=' container bg-blue-950 px-6  py-6 flex justify-end'> 
+                    <button  onClick={toggleMenu} className=''>  
+                    < FiX className="w-7 h-7 border rounded-full border-white "/></button></div>
+                <div className="nav-links font-playfair font-medium text-xl flex flex-col items-center mt-12 justify-center gap-9">
+                <div className="links"><a href="#" className=" capitalize text-black">The company</a></div>
+                <div className="links"><a href="#" className=" capitalize text-black">Solutions</a></div>
+                <div className="links"><a href="#" className="capitalize  text-black">blog</a></div>
+                <div className="links"><a href="#" className=" capitalize text-black">career</a></div>
+                <div className="links"><a href="#" className=" capitalize text-black">contact</a></div>
+                
+            </div>
+            <div className="nav-socialplatfom flex gap-7 mt-7 ">
+                <div className="icon-f">
+                  <FaFacebookF className='w-8 h-8 bg-blue-950 text-lg  text-gray-200 rounded-full p-1' />
+                  </div>
+                <div className="icon-f  ">
+                    <FaTwitter className='w-8 h-8  bg-blue-950   text-lg  text-gray-200 rounded-full p-1 '/>
+                    </div>
+                <div className="icon-f">
+                    <FaInstagram className='w-8 h-8 bg-blue-950   text-gray-200 rounded-full text-lg p-1'/>
+                    </div>
+                <div className="icon-f">
+                    <FaLinkedin className='w-8 h-8 bg-blue-950   text-gray-200 rounded-full text-lg p-1'/>
+                    </div>
+            </div>
+
+            <div className="nav-noplatfom flex  font-san gap-7 mt-8 ">
+                <div className="icon-f">
+                  <h5 className=" text-black font-semibold">09073761968</h5>
+                  </div>
+                <div className="icon-f  ">
+                <h5 className=" text-black  font-semibold">08032433093</h5>
+                    </div>
+              
+            </div>
+
+            <div className='  border border-blue-950 text-center px-16 rounded-lg py-1  mt-9 flex justify-end'> <button  onClick={toggleMenu} className='text-blue-950 '>  
+           Close</button></div>
+            
+           </motion.div>
+            )} 
+            </AnimatePresence>
+        </div>
+        </div>
+
+    </div>  
+
+        
+</div>
+  )
+}
