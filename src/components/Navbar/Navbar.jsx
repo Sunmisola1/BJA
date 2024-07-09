@@ -57,7 +57,7 @@ export default function Navbar() {
                  transition={{ duration: 0.2 }}
                className = {` fixed inset-0 bg-green-50 h-full  flex flex-col items-center  text-white z-20  transform ${isOpen ? 'navbar-slide-in' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
                
-                <div className=' container bg-blue-950 px-6  py-6 flex justify-end'> 
+                <div className=' container bg-blue-950 px-6  py-9 flex justify-end'> 
                     <button  onClick={toggleMenu} className=''>  
                     < FiX className="w-7 h-7 border rounded-full border-white "/></button></div>
                 <div className="nav-links font-playfair font-medium text-xl flex flex-col items-center mt-12 justify-center gap-9">
@@ -68,7 +68,7 @@ export default function Navbar() {
                 <div className="links"><a href="#" className=" capitalize text-black">contact</a></div>
                 
             </div>
-            <div className="nav-socialplatfom flex gap-7 mt-7 ">
+            <div className="nav-socialplatfom flex gap-7 mt-10 ">
                 <div className="icon-f">
                   <FaFacebookF className='w-8 h-8 bg-blue-950 text-lg  text-gray-200 rounded-full p-1' />
                   </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
                     </div>
             </div>
 
-            <div className="nav-noplatfom flex  font-san gap-7 mt-8 ">
+            <div className="nav-noplatfom flex  font-san gap-7 mt-10 ">
                 <div className="icon-f">
                   <h5 className=" text-black font-semibold">09073761968</h5>
                   </div>
@@ -93,7 +93,7 @@ export default function Navbar() {
               
             </div>
 
-            <div className='  border border-blue-950 text-center px-16 rounded-lg py-1  mt-9 flex justify-end'> <button  onClick={toggleMenu} className='text-blue-950 '>  
+            <div className='  border border-blue-950 text-center px-16 rounded-lg py-1  mt-10 flex justify-end'> <button  onClick={toggleMenu} className='text-blue-950 '>  
            Close</button></div>
             
            </motion.div>

@@ -225,8 +225,7 @@ export default function Homepage() {
  </SlideDown>
     </div>
 
-            {/* news and events
-             */}
+            {/* news and events*/}
 
              <div className=" my-9 md:my-10 bg-green-50 flex flex-col items-center justify-center">
            
