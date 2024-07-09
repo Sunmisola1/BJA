@@ -20,7 +20,7 @@ export default function Navbar() {
             </div> */}
           
             <div className="nav-logo flex items-start md:ml-0 ">
-                <img src={Logo} alt="bja-logo" className='ml-6 w-24 h-24 md:w-36 md:h-36' />
+                <img src={Logo} alt="bja-logo" className='ml-6 w-24 h-24 md:z-50 md:w-36 md:h-36' />
             </div>
             <div className="nav-links md:flex gap-10 font-playfair font-medium text-xl hidden ">
                 <div className="links"><a href="#">THE COMPANY</a></div>

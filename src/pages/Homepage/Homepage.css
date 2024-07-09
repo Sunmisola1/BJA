@@ -1,14 +1,71 @@
 
 
-.banner{
-    background: url('../../assets/img/onshore-drilling.-exploration.-oil-rig.jpg') !important;
-    height: 80vh !important;
-    background-size: 100% 100% !important;
-      background-position: center;
-    width: auto !important;
+  /* .banner{
+      background: url('../../assets/img/hero.mp4') !important;
+      height: 40vh !important;
+      background-size: 100% 100% !important;
+        background-position: center;
+      width: auto !important;
+  } */
+
+
+.hero-section {
+  position: relative !important;
+  height: 70% !important; /* Adjust the height as needed */
+  overflow: hidden !important;
+
 }
+
+.hero-video {
+  width: 100%;
+  height: 70vh  !important;
+  object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Ensure content appears above the video */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure content fills the hero section */
+  padding: 0 20px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+
 /* what we do */
 .text-color{
  background-color:  #2e3177;
  
 }
+/* src/index.css */
+
+@media screen and (max-width: 767px) {
+  .hero{
+    width:100%;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   margin-top: 10%;
+  }
+  .hero-section {
+    position: relative !important;
+    height: 70% !important; /* Adjust the height as needed */
+    overflow: hidden !important;
+   
+  
+  }
+  
+  .hero-video {
+    width:90%;
+    height:50vh  !important;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    border-radius: 10px;
+    border:1px solid blue;
+  }
+}
+
+
