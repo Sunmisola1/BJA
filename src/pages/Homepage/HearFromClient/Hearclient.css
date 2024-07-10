@@ -1,0 +1,11 @@
+.text-testimony{
+    width: 500px !important;
+    font-weight: 500 !important;
+}
+@media screen and (max-width: 768px) {
+    .text-testimony{
+        width: 400px !important;
+        font-weight: 500 !important;
+        
+    } 
+}

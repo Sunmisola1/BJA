@@ -13,7 +13,7 @@ export default function Navbar() {
     
   return (
     <div>
-    <div className="nav-container h-22 md:h-42  flex bg-green-50 ">
+    <div className="nav-container h-22 md:h-42  flex bg-blue-50 ">
         <div className=" flex justify-between md:flex md:justify-evenly bg-white items-center shadow w-full mt-14 h-16  ">
             {/* <div className='bg-gray-500  absolute'>
                 <hr/>

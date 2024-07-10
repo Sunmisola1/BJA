@@ -1,13 +1,4 @@
-
-
-  /* .banner{
-      background: url('../../assets/img/hero.mp4') !important;
-      height: 40vh !important;
-      background-size: 100% 100% !important;
-        background-position: center;
-      width: auto !important;
-  } */
-  .hero-section {
+.hero-section {
     position: relative !important;
     height: 70% !important; /* Adjust the height as needed */
     overflow: hidden !important;
@@ -57,15 +48,3 @@
     }
   }
     
-
-
-
-/* what we do */
-.text-color{
- background-color:  #2e3177;
- 
-}
-/* src/index.css */
-
-
-
