@@ -83,7 +83,7 @@ export default function Navbar() {
                     </div>
             </div>
 
-            <div className="nav-noplatfom flex  font-san gap-7 mt-10 ">
+            <div className="nav-noplatfom flex  font-san gap-7 mt-8 ">
                 <div className="icon-f">
                   <h5 className=" text-black font-semibold">09073761968</h5>
                   </div>
@@ -93,7 +93,7 @@ export default function Navbar() {
               
             </div>
 
-            <div className='  border border-blue-950 text-center px-16 rounded-lg py-1  mt-10 flex justify-end'> <button  onClick={toggleMenu} className='text-blue-950 '>  
+            <div className='  border border-blue-950 text-center px-16 rounded-lg py-1  mt-9 flex justify-end'> <button  onClick={toggleMenu} className='text-blue-950 '>  
            Close</button></div>
             
            </motion.div>

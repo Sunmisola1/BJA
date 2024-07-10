@@ -3,7 +3,7 @@ import {FaFacebookF,FaTwitter, FaInstagram, FaLinkedin  } from 'react-icons/fa';
 export default function Footer() {
   return (
     <div>
-            <div className="footer py-16 bg-blue-50  flex gap-72">
+            <div className="footer py-16 bg-blue-50  flex">
                 <div className="first-div">
                     <div className="logo flex gap-2">
                         <img src={Logo} alt="logo-img"   className='w-16 h-16' />
