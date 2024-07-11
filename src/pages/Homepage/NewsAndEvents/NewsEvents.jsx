@@ -79,7 +79,7 @@ const NewsEvents =()=> {
     
   return (
             <div className=" py-9 md:py-10 bg-blue-50 flex flex-col items-center justify-center">
-           <div className="see-more-area">
+           <div className="see-more-area"></div>
                 <div className="title-news text-right">
                     <h1 className='text-blue-950 text-xl text-right md:text-center mt-10 md:mb-8  font-bold font-san md:text-3xl'>News / Events</h1>
                 </div>
@@ -216,14 +216,11 @@ const NewsEvents =()=> {
 
                 </SlideRight> 
 
-
+               
             )}
-</div>
+
   </div>
-   see more
-   <div className="see-more-section">
-    <p></p>
-   </div>
+   
 
       
         
