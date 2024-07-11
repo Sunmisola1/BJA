@@ -6,7 +6,7 @@ import box from '../../../assets/img/images.jpg';
 
 const TrustedSection =()=> {
     const settings = {
-        dots: true,
+       
         infinite: true,
         speed: 500,
         slidesToShow: 5,
