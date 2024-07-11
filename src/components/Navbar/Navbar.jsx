@@ -55,7 +55,7 @@ export default function Navbar() {
                  animate={{ x: 0 }}
                  exit={{ x: '100%' }}
                  transition={{ duration: 0.2 }}
-               className = {` fixed inset-0 bg-green-50 h-full  flex flex-col items-center  text-white z-20  transform ${isOpen ? 'navbar-slide-in' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
+               className = {`fixed inset-0 bg-blue-50 h-full  flex flex-col items-center  text-white z-20  transform ${isOpen ? 'navbar-slide-in' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
                
                 <div className=' container bg-blue-950 px-6  py-9 flex justify-end'> 
                     <button  onClick={toggleMenu} className=''>  

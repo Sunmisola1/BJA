@@ -1,0 +1,13 @@
+.first-div{
+    width:400px;
+}
+.logo-text{
+    font-weight: 500;
+    font-family: roboto;
+}
+.first-address,
+.second-address{
+
+    width:270px;
+    font-weight: 500;
+}
