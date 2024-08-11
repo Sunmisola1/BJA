@@ -5,7 +5,7 @@ import {FaFacebookF,FaTwitter, FaInstagram, FaLinkedin  } from 'react-icons/fa';
 import "./Navbar.css" 
 import { FiMenu ,  FiX} from 'react-icons/fi';
 import { motion,AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false)
@@ -24,10 +24,11 @@ export default function Navbar() {
                 <img src={Logo} alt="bja-logo" className='ml-6 w-24 h-24 md:z-50 md:w-36 md:h-36' />
             </div>
             <div className="nav-links md:flex gap-10 font-playfair font-medium text-xl hidden ">
+            <div className="links"><Link  to="/" >HOME</Link></div>
                 <div className="links"><Link  to="/TheCompany" >THE COMPANY</Link></div>
-                 <div className="links"><Link  to="/Solution" >SOLUTION</Link></div>
+                 <div className="links"><Link  to="/teams" >TEAMS</Link></div>
                 <div className="links"><Link  to="/Blog" >BLOG</Link></div>
-                <div className="links"><Link  to="/Career" >CAREER</Link></div>
+                <div className="links"><Link  to="/gallery" >GALLERY</Link></div>
                 <div className="links"><Link  to="/Contact" >CONTACT</Link></div>
             </div>
             <div className="nav-socialplatfom md:flex gap-5  justify-evenly hidden  ">
@@ -62,6 +63,7 @@ export default function Navbar() {
                     <button  onClick={toggleMenu} className=''>  
                     < FiX className="w-7 h-7 border rounded-full border-white "/></button></div>
                 <div className="nav-links font-playfair font-medium text-xl flex flex-col items-center mt-12 justify-center gap-9">
+                <div className="links"><Link  to="/" className=" capitalize text-black">Home</Link></div>
                 <div className="links"><Link  to="/TheCompany" className=" capitalize text-black">The company</Link></div>
                 <div className="links"><Link  to="/Solution" className=" capitalize text-black">Solutions</Link></div>
                 <div className="links"><Link  to="/Blog" className="capitalize  text-black">blog</Link></div>
