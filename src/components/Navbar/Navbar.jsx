@@ -65,9 +65,9 @@ export default function Navbar() {
                 <div className="nav-links font-playfair font-medium text-xl flex flex-col items-center mt-12 justify-center gap-9">
                 <div className="links"><Link  to="/" className=" capitalize text-black">Home</Link></div>
                 <div className="links"><Link  to="/TheCompany" className=" capitalize text-black">The company</Link></div>
-                <div className="links"><Link  to="/Solution" className=" capitalize text-black">Solutions</Link></div>
+                <div className="links"><Link  to="/Teams" className=" capitalize text-black">Teams</Link></div>
                 <div className="links"><Link  to="/Blog" className="capitalize  text-black">blog</Link></div>
-                <div className="links"><Link  to="/Career" className=" capitalize text-black">career</Link></div>
+                <div className="links"><Link  to="/Gallery" className=" capitalize text-black">Gallery</Link></div>
                 <div className="links"><Link  to="/Contact" className=" capitalize text-black">contact</Link></div>
                
             </div>

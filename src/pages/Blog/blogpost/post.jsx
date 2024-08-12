@@ -1,6 +1,7 @@
 import box from '../../../assets/img/images.jpg';
 import { useState } from 'react';
 import SlideRight from '../../../components/slidescroll/Slideup';
+import { FaSearch } from 'react-icons/fa';
 
 
 export default function  Blogpost () {
@@ -70,24 +71,29 @@ export default function  Blogpost () {
  
     
   return (
-            <div className=" py-12 md:py-20 bg-blue-50  overflow-hidden">
-           <div className="see-more-area"></div>
+            <div className="py-10 md:py-20 bg-blue-50  overflow-hidden">
+           <div className="see-more-area flex justify-center relative mt-5   mb-14"> 
+                        <FaSearch className='relative left-10 top-3 text-blue-950'/> 
+                        <span className='relative left-12 top-0 text-2xl text-gray-400'>|</span>
+        <input type="text" placeholder="Enter a phrase to use the search engine" className=' md:placeholder:text-xs placeholder:text-center  h-10 md:w-1/3 px-14 md:px-20 border-2 border-black rounded-full' />
+
+            </div>
                
-                <div className="container px-4 py-1">
+                <div className="lcontainer flex flex-col items-center justify-center ">
                            <SlideRight>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                <div className="grid grid-cols-1 gap-5 md:gap-20 md:grid-cols-2 lg:grid-cols-3 ">
                     {news.map((item, index) => (
-                        <div key={index} className="p-4 ">
+                        <div key={index} className="p-4">
                             
-                            <div className="new-container w-96 mx-4 md:p-0 md:mx-28">
+                            <div className="new-container w-80  md:p-0 ">
                                 <div className="img-cont">
-                                    <img src={item.img} alt={item.alt} className=" w-72 md:w-full h-48  md:h-72 object-cover "/>
+                                    <img src={item.img} alt={item.alt} className="w-full h-48  md:h-60 object-cover "/>
                                 </div>
                                 <div className="text-con  mt-5 font-roboto">
                                     <h1 className="text-lg tracking-wider font-bold my-3">{item.heading}</h1>
                                     <p className="tracking-wider text-justify">{item.paragraph}</p>
                                 </div>
-                                <div className="like-cont flex my-4 text-sm gap-12 "> 
+                                <div className="like-cont flex my-4 text-sm gap-7 "> 
                                 <p className="flex gap-2">
                                 <span className='tracking-wider'> Date:</span>{item.date}
                                         </p> 
@@ -128,7 +134,7 @@ export default function  Blogpost () {
                                     </p>
                                 </div>
                                 <div className="btn-cont">
-                                    <button className="bg-blue-950 px-24 py-5 rounded-sm text-white font-bold font-playfair">
+                                    <button className="bg-blue-950 px-20 py-4 rounded-sm text-white font-bold font-playfair">
                                         Read more
                                     </button>
                                 </div>
