@@ -1,11 +1,9 @@
-import SideBar from "./SideBar";
+import SideBar from "./SideBar/SideBar";
 
 export default function TheCompany() {
   return (
     <div>
-      
-
-      <SideBar/>
+            <SideBar/>
     </div>
   )
 }

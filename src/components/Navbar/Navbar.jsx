@@ -21,9 +21,9 @@ export default function Navbar() {
             </div> */}
           
             <div className="nav-logo flex items-start md:ml-0 ">
-                <img src={Logo} alt="bja-logo" className='ml-6 w-24 h-24 md:z-50 md:w-36 md:h-36' />
+                <img src={Logo} alt="bja-logo" className='ml-1 w-24 h-24 md:z-50 md:w-36 md:h-36' />
             </div>
-            <div className="nav-links md:flex gap-10 font-playfair font-medium text-xl hidden ">
+            <div className="nav-links md:flex gap-10 font-playfair font-medium text-lg hidden ">
             <div className="links"><Link  to="/" >HOME</Link></div>
                 <div className="links"><Link  to="/TheCompany" >THE COMPANY</Link></div>
                  <div className="links"><Link  to="/teams" >TEAMS</Link></div>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 <div className=' container bg-blue-950 px-6  py-9 flex justify-end'> 
                     <button  onClick={toggleMenu} className=''>  
                     < FiX className="w-7 h-7 border rounded-full border-white "/></button></div>
-                <div className="nav-links font-playfair font-medium text-xl flex flex-col items-center mt-12 justify-center gap-9">
+                <div className="nav-links font-playfair font-medium text-lg flex flex-col items-center mt-12 justify-center gap-9">
                 <div className="links"><Link  to="/" className=" capitalize text-black">Home</Link></div>
                 <div className="links"><Link  to="/TheCompany" className=" capitalize text-black">The company</Link></div>
                 <div className="links"><Link  to="/Teams" className=" capitalize text-black">Teams</Link></div>

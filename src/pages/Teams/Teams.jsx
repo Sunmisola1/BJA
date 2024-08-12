@@ -83,7 +83,7 @@ export default function Teams() {
           </div>
           {/* our team */}
           <div className='teams-wraps pb-6 flex flex-col items-center justify-center'>
-          <div className="text-wraps mt-28 mb-14">
+          <div className="text-wraps mt-10 md:mt-28 mb-10">
               <h2 className="text-center font-bold text-2xl">Our Teams</h2>
           </div>
           <div className="team-wraps block gap-5">
